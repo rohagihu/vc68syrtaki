@@ -1,0 +1,9 @@
+.einstellungen [data-spielmodus] {
+  display: none;
+}
+.einstellungen input[name="spielmodus"][value="punkte"]:checked + [data-spielmodus="punkte"] {
+  display: block;
+}
+.einstellungen input[name="spielmodus"][value="zeit"]:checked + [data-spielmodus="zeit"] {
+  display: block;
+}

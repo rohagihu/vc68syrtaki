@@ -1,0 +1,24 @@
+.einstellungen {
+    [data-spielmodus] {
+        display: none;
+    }
+
+    input[name="spielmodus"][value="punkte"]:checked {
+        & + [data-spielmodus="punkte"] {
+            display: block;
+        }
+    }
+    input[name="spielmodus"][value="zeit"]:checked {
+        & + [data-spielmodus="zeit"] {
+            display: block;
+        }
+    }
+    // .teams {
+    //     &:first-child {
+    //         float: left;
+    //     }
+    //     &:last-child {
+    //         float: right;
+    //     }
+    // }
+}
