@@ -65,6 +65,7 @@ IF (isset($_POST['edit']) && $editNameInput != null) {
     <script src="js/components/test.js"></script>
     <script src="js/components/shuffle.js"></script>
     <script src="js/components/watch_teams.js"></script>
+    <script src="js/components/start.js"></script>
 
     <title>Syrtaki Cup 2018</title>
 </head>
@@ -92,8 +93,8 @@ IF (isset($_POST['edit']) && $editNameInput != null) {
             </li>
         </ul>
         <section class="row">
+            <h2>Mannschaften</h2>
             <article class="column small-6 teams">
-                <h2>Mannschaften</h2>
                 <ol>
                     <?php
                     for ($i = 0; $i < 15; $i++) {
@@ -105,7 +106,7 @@ IF (isset($_POST['edit']) && $editNameInput != null) {
             </article>
 
             <article class="column small-6 teams">
-                <table>
+                <table class="js-finalTeams">
                     <?php
                     for ($i = 0; $i < 5; $i++) {
                         echo "<tr>";
@@ -118,6 +119,7 @@ IF (isset($_POST['edit']) && $editNameInput != null) {
                 </table>
             </article>
         </section>
+        <button class="js-start">Start</button>
     </form>
 
     <script src="js/footer.js"></script>

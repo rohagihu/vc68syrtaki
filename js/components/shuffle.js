@@ -1,3 +1,5 @@
+// @params teams - global var, ref: base.js
+
 function shuffle() {
 
         function shuffleTeams(o) {
@@ -9,10 +11,10 @@ function shuffle() {
         event.preventDefault();
         event.stopPropagation();
 
-        let teams = $('.teams ol input').serializeArray();
-        shuffleTeams(teams);
-        for (let i = 0; i < teams.length; i++) {
-            $($('.teams input')[i]).val(teams[i].value);
+        let teamsArr = $('.teams ol input').serializeArray();
+        shuffleTeams(teamsArr);
+        for (let i = 0; i < teamsArr.length; i++) {
+            teams['team'+i] = teamsArr[i].value;
         }
     });
 }

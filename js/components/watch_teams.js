@@ -15,18 +15,4 @@ function watch_teams() {
         teams[name] = str;
 
     });
-    // let teams = $('.teams input');
-    // console.log(teams);
-    // teams[0].watch('value', function (id, oldval, newval) {
-    //     console.log('o.' + id + ' changed from ' + oldval + ' to ' + newval);
-    //     return newval;
-    // });
-
-    // Object.entries(teams).forEach(
-    //     ([key, value]) => {
-    //         if (value.value !== undefined) {
-    //             console.log(value.value);
-    //         }
-    //     }
-    // );
 }
